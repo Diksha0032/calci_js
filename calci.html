@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body{
+      background-color: black;
+    }
+    h1{
+       color: white;
+    }
+    .col-red{
+      border-radius: 10px;
+      border-color: white;
+      background-color: red;
+      color:white;
+      width:60px;
+      height:60px;
+      font-size: 20px;
+    }
+
+    #Input-display{
+      color: white;
+      font-size: 60px;
+    }
+    
+
+  </style>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calci</h1>
+    <p><span id="Input-display"></span></p>
+    <p><span id="Output-display"></span></p>
+
+    <p><button class="col-red"
+      onclick="console.log('1');
+      calci+='1';
+      document.getElementById('Input-display').innerText = calci;
+">1</button>
+    <button class="col-red"
+          onclick="console.log('2');
+          calci+='2';
+          document.getElementById('Input-display').innerText = calci;
+      " >2</button>
+    <button class="col-red"
+      onclick="console.log('3');
+      calci+='3';
+      document.getElementById('Input-display').innerText = calci;
+      ">3</button>
+    <button class="col-red"
+      onclick="console.log('+');
+      calci+=' + ';
+      document.getElementById('Input-display').innerText = calci;
+      ">+</button>
+    </p>
+    
+    <p><button class="col-red"
+      onclick="console.log('4');
+      calci+='4';
+      document.getElementById('Input-display').innerText = calci;"
+      >4</button>
+    <button class="col-red" 
+    onclick="console.log('5');
+      calci+='5';
+      document.getElementById('Input-display').innerText = calci;">5</button>
+    <button class="col-red"
+    onclick="console.log('6');
+      calci+='6';
+      document.getElementById('Input-display').innerText = calci;">6</button>
+    <button class="col-red"
+    onclick="console.log('-');
+      calci+=' - ';
+      document.getElementById('Input-display').innerText = calci;">-</button>
+    </p>
+    
+    <p><button class="col-red"
+      onclick="console.log('7');
+      calci+='7';
+      document.getElementById('Input-display').innerText = calci;">7</button>
+    <button class="col-red"
+    onclick="console.log('8');
+      calci+='8';
+      document.getElementById('Input-display').innerText = calci;">8</button>
+    <button class="col-red"
+    onclick="console.log('9');
+      calci+='9';
+      document.getElementById('Input-display').innerText = calci;">9</button>
+    <button class="col-red"
+    onclick="console.log('*');
+      calci+=' * ';
+      document.getElementById('Input-display').innerText = calci;">*</button>
+    </p>
+     
+    <p><button class="col-red"
+      onclick="console.log('0');
+      calci+='0';
+      document.getElementById('Input-display').innerText = calci;">0</button>
+    <button class="col-red"
+    onclick="console.log('.');
+      calci+='.';
+      document.getElementById('Input-display').innerText = calci;">.</button>
+    <button class="col-red"
+    onclick="console.log(eval(calci));
+    
+  calci = eval(calci).toString(); 
+  document.getElementById('Input-display').innerText = calci; 
+     ">=</button>
+    <button class="col-red"
+    onclick="console.log('/');
+      calci+=' / ';
+      document.getElementById('Input-display').innerText = calci;">/</button>
+    </p>
+    
+    <button class="col-red"
+    onclick="
+      calci='';
+      console.log(calci);
+      document.getElementById('Input-display').innerText = '';
+  document.getElementById('Output-display').innerText = '';">Clear</button>
+  </body>
+
+  <script>
+  var calci='';
+  </script>
+</html>
