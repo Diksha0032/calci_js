@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
   <style>
+     .calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 10px;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+
+  button {
+    margin: 5px;
+  }
+
     body{
       background-color: black;
     }
@@ -31,6 +48,7 @@
   </script>
   </head>
   <body>
+    <div class="calculator">
     <h1>Calci</h1>
     <p><span id="Input-display"></span></p>
     <p><span id="Output-display"></span></p>
@@ -120,6 +138,7 @@
       console.log(calci);
       document.getElementById('Input-display').innerText = '';
   document.getElementById('Output-display').innerText = '';">Clear</button>
+    </div>
   </body>
 
  
